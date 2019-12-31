@@ -11,6 +11,10 @@
          <div>{{htmlcontent}}</div>
       </div> -->
       <!-- <script type = "text/javascript" src = "vue_template.js"></script> -->
+      <div class="logo">
+
+      </div>
+
       <div id="chatapp">
          <div class="messagebar">
            <input class="new-chat"
@@ -38,7 +42,7 @@
                </div>
              </li>
              
-             <li v-for="todo in e"
+             <li v-for="todo in filteredTodos"
                class="todo botmsg"
                :key="todo.id">
                <div class="view">

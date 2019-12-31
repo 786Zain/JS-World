@@ -11,14 +11,14 @@ var todoStorage = {
   },
   save: function (todos) {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(todos))
-  },
-  botans: function (todos) {
-    todos.forEach(function (todo, index) {
-      if (todo.title == 'Hi') {
-        return 'zain accepted'
-      }
-    })
   }
+  // botans: function (todos) {
+  //   todos.forEach(function (todo, index) {
+  //     if (todo.title == 'Hi') {
+  //       return 'zain accepted'
+  //     }
+  //   })
+  // }
 }
 
 // visibility filters
@@ -43,7 +43,7 @@ var app = new Vue({
     todos: {
       handler: function (todos) {
         todoStorage.save(todos)
-        todoStorage.botans(todos)
+        // todoStorage.botans(todos)
       },
       deep: true
     }
