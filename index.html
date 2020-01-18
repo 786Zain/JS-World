@@ -32,7 +32,7 @@
 		var count = 0;
 		function gitAlert() {
 			var msgs = [
-				"These is macOS theme written in ReactJS Code Format.", "These is macOS theme written in VueJS Code Format.", "These theme written in WordPress Code Format and can be edited.", "These is cloud computing project it defines recommendation video list to member can also operate by android application."
+				"Angular 8 Project will be updated on 23-01-2020", "Magento 2 Project will be updated on 23-01-2020", "Node Express Project will be updated on 23-01-2020", "These is macOS theme written in ReactJS Code Format.", "These is macOS theme written in VueJS Code Format.", "These theme written in WordPress Code Format and can be edited.", "These is cloud computing project it defines recommendation video list to member can also operate by android application."
 			];
 			document.getElementById("alert").innerHTML = msgs[count];
 		}
@@ -46,15 +46,21 @@
 		}
 		function Git() {
 			var links = [
-				"https://github.com/786Zain/macOS.git", "https://github.com/786Zain/VueJS.git", "https://github.com/786Zain/WordPress.git", "https://github.com/786Zain/VIDEO-RECOMMENDATION.git"
+				"#", "#", "#", "https://github.com/786Zain/macOS.git", "https://github.com/786Zain/VueJS.git", "https://github.com/786Zain/WordPress.git", "https://github.com/786Zain/VIDEO-RECOMMENDATION.git"
 			];
 			document.getElementById("GitLink").setAttribute('href', links[count]);
 		}
 		function Live() {
 			var links = [
-				"https://786zain.github.io/JS-World/ReactJS", "https://786zain.github.io/JS-World/VueJS", "https://github.com/786Zain/WordPress.git", "https://786zain.github.io/JS-World/"
+				"#", "#", "#", "https://786zain.github.io/JS-World/ReactJS", "https://786zain.github.io/JS-World/VueJS", "https://github.com/786Zain/WordPress.git", "https://786zain.github.io/JS-World/"
 			];
 			document.getElementById("LiveLink").setAttribute('href', links[count]);
+		}
+		function Download() {
+			var links = [
+				"https://786zain.github.io/JS-World/ReactJS", "#", "#", "", "", "", ""
+			];
+			document.getElementById("DownloadLink").setAttribute('href', links[count]);
 		}
 	</script>
 
@@ -101,14 +107,26 @@
 				</div>
 				<div class="pieces-slider__slide">
 					<img class="pieces-slider__image" src="img/1.png" alt="">
-					<h2 class="pieces-slider__text">React JS</h2>
+					<h2 class="pieces-slider__text">Angular 8</h2>
 				</div>
 				<div class="pieces-slider__slide">
 					<img class="pieces-slider__image" src="img/2.png" alt="">
-					<h2 class="pieces-slider__text">Vue JS</h2>
+					<h2 class="pieces-slider__text">Magento 2</h2>
 				</div>
 				<div class="pieces-slider__slide">
 					<img class="pieces-slider__image" src="img/3.png" alt="">
+					<h2 class="pieces-slider__text">CRUD Application</h2>
+				</div>
+				<div class="pieces-slider__slide">
+					<img class="pieces-slider__image" src="img/4.png" alt="">
+					<h2 class="pieces-slider__text">React JS</h2>
+				</div>
+				<div class="pieces-slider__slide">
+					<img class="pieces-slider__image" src="img/5.png" alt="">
+					<h2 class="pieces-slider__text">Vue JS</h2>
+				</div>
+				<div class="pieces-slider__slide">
+					<img class="pieces-slider__image" src="img/6.png" alt="">
 					<h2 class="pieces-slider__text">WordPress</h2>
 				</div>
 				<div class="pieces-slider__slide">
@@ -122,6 +140,7 @@
 		</div>
 		<a id="GitLink" href=""><button class="btn fourth GitButton" onclick="Git()">View on Github</button></a>
 		<a id="LiveLink" href=""><button class="btn fourth LiveButton" onclick="Live()">Live Demo</button></a>
+		<a id="DownloadLink" href=""><div class="DownloadButton" onclick="Download()"></div></a>
 	</main>
 	<script src='js/anime.min.js'></script>
 	<script src='js/pieces.min.js'></script>
