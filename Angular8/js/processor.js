@@ -153,6 +153,7 @@ class ZT {
         Download Complete Project from douploads link <strong>DOWNLOAD Button</strong><br />
 
         * pre install nodejs 10v<br />
+        * pre install mongoDB Server<br />
         * open cmd locate project location path<br />
         * type npm install<br />
         * type npm start<br />
