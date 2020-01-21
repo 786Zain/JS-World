@@ -7,9 +7,9 @@ class ZT {
         // var first = document.createElement('first');
         // document.head.appendChild(first);
         let self = this;
+        self.code();
         $.getScript('../js/controller.js', function () {
         })
-        self.code();
     }
     Header() {
         $('#header').empty().append(`
