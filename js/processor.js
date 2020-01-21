@@ -7,9 +7,9 @@ class ZT {
         // var first = document.createElement('first');
         // document.head.appendChild(first);
         let self = this;
-        self.code();
         $.getScript('../js/controller.js', function () {
         })
+        self.code();
     }
     Header() {
         $('#header').empty().append(`
@@ -80,7 +80,9 @@ class ZT {
             <button class="pieces-slider__button pieces-slider__button--next" onclick="incr()">next</button>
         </div>
     </div>
-
+    <div class="">
+        <p class="Github_Comment"></p>
+</div>
 		<a id="GitLink" href=""><button class="btn fourth GitButton" onclick="Git()">View on Github</button></a>
 		<a id="LiveLink" href=""><button class="btn fourth LiveButton" onclick="Live()">Live Demo</button></a>
 		<a id="DownloadLink" href="">

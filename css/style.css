@@ -21,6 +21,16 @@
 	animation-iteration-count:25;
 	animation-delay:2s;
 }
+.Github_Comment{
+	position:absolute;
+	top:66%;
+	left:3%;
+	width: auto;
+	border-radius: 5px;
+	color: #d6dfe4;
+	background: #eb1d38;
+	border: 1px solid #e02a85;
+}
 .tn-box p {
 	font-weight: bold;
 	font-size: 16px;
@@ -79,11 +89,14 @@
 }
 
 .tn-box-color-3{
-	background: #dd9aff;
-	border: 1px solid #b367db;
+	background: #eb1d38;
+	border: 1px solid #e02a85;
+	
 }
-.tn-box-color-3 p {
-	color: #69288b;
+.tn-box-color-3 > p {
+	color: #d6dfe4;
+	background: #eb1d38;
+	border: 1px solid #e02a85;
 }
 
 /* Fire the animations */
