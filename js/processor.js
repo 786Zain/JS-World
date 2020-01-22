@@ -10,7 +10,7 @@ class ZT {
         $.when(
             self.Header(),
             self.code(),
-            $.getScript('../js/controller.js', function () {
+            $.getScript('js/controller.js', function () {
             })).done(function () {
                 console.log("Scripts Loaded");
             })
