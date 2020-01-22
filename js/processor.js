@@ -8,11 +8,12 @@ class ZT {
         // document.head.appendChild(first);
         let self = this;
         $.when(
-        self.code(),
-        $.getScript('../js/controller.js', function () {
-        })).done(function(){
-            console.log("Scripts Loaded");
-        })
+            self.Header(),
+            self.code(),
+            $.getScript('../js/controller.js', function () {
+            })).done(function () {
+                console.log("Scripts Loaded");
+            })
     }
     Header() {
         $('#header').empty().append(`
@@ -77,7 +78,7 @@ class ZT {
                 <p id="alert"></p>
                 <div class="tn-progress"></div>
             </div>
-            `+this.slides()+`
+            `+ this.slides() + `
             <canvas class="pieces-slider__canvas"></canvas>
             <button class="pieces-slider__button pieces-slider__button--prev" onclick="decr()">prev</button>
             <button class="pieces-slider__button pieces-slider__button--next" onclick="incr()">next</button>
