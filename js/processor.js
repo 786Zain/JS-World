@@ -8,7 +8,7 @@ class ZT {
         // document.head.appendChild(first);
         let self = this;
         self.code();
-        $.getScript('../js/controller.js', function () {
+        $.getScript('controller.js', function () {
         })
     }
     Header() {
