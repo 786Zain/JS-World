@@ -20,7 +20,7 @@
 		}
 		function gitAlert() {
 			var msgs = [
-				"Angular 8 Project Chat forum with Signin, Signup, blog filter features", "Magento 2 Project will be updated on 10-Feb-2020", "Node Express Project will be updated on 10-Feb-2020", "These is macOS theme written in ReactJS Code Format.", "These is macOS theme written in VueJS Code Format.", "These theme written in WordPress Code Format and can be edited.", "These is cloud computing project it defines recommendation video list to member can also operate by android application."
+				"Angular 8 Project Chat forum with Signin, Signup, blog filter features", "Magento 2 Project will be updated soon", "Node Express Project will be updated soon", "These is macOS theme written in ReactJS Code Format.", "These is macOS theme written in VueJS Code Format.", "These theme written in WordPress Code Format and can be edited.", "These is cloud computing project it defines recommendation video list to member can also operate by android application."
 			];
 			document.getElementById("alert").innerHTML = msgs[count];
 		}
