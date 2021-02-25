@@ -1,22 +1,22 @@
 class ZT {
-    constructor(options) {
-        let self = this;
-        self.init();
-    }
-    init() {
-        // var first = document.createElement('first');
-        // document.head.appendChild(first);
-        let self = this;
-        $.when(
-            self.Header(),
-            self.code(),
-            $.getScript('js/controller.js', function () {
-            })).done(function () {
-                console.log("Scripts Loaded");
-            })
-    }
-    Header() {
-        $('#header').empty().append(`
+  constructor(options) {
+    let self = this;
+    self.init();
+  }
+  init() {
+    // var first = document.createElement('first');
+    // document.head.appendChild(first);
+    let self = this;
+    $.when(
+      self.Header(),
+      self.code(),
+      $.getScript("js/controller.js", function () {})
+    ).done(function () {
+      console.log("Scripts Loaded");
+    });
+  }
+  Header() {
+    $("#header").empty().append(`
         <link rel="shortcut icon" href="favicon.png">
         <link rel="stylesheet" type="text/css" href="css/base.css" />
         <link rel="stylesheet" type="text/css" href="css/slider.css" />
@@ -36,11 +36,13 @@ class ZT {
             }
         </style>
     
-        `)
-    }
-    code() {
-
-        $('#code').empty().append(`
+        `);
+  }
+  code() {
+    $("#code")
+      .empty()
+      .append(
+        `
        
 	<svg class="hidden">
 		<symbol id="icon-arrow" viewBox="0 0 24 24">
@@ -78,7 +80,9 @@ class ZT {
                 <p id="alert"></p>
                 <div class="tn-progress"></div>
             </div>
-            `+ this.slides() + `
+            ` +
+          this.slides() +
+          `
             <canvas class="pieces-slider__canvas"></canvas>
             <button class="pieces-slider__button pieces-slider__button--prev" onclick="decr()">prev</button>
             <button class="pieces-slider__button pieces-slider__button--next" onclick="incr()">next</button>
@@ -89,29 +93,30 @@ class ZT {
 </div>
 		<a id="GitLink" href=""><button class="btn fourth GitButton" onclick="Git()">View on Github</button></a>
 		<a id="LiveLink" href=""><button class="btn fourth LiveButton" onclick="Live()">Live Demo</button></a>
-		<a id="DownloadLink" href="">
+		<!--<a id="DownloadLink" href="">
 			<div class="DownloadButton" onclick="Download()"></div>
-		</a>
+		</a>-->
 	</main>
 	<script src='js/anime.min.js'></script>
 	<script src='js/pieces.min.js'></script>
 	<script src='js/demo.js'></script>
 
-        `)
-    }
-    slides() {
-        var slides = `
+        `
+      );
+  }
+  slides() {
+    var slides = `
         <div class="pieces-slider__slide">
         <img class="pieces-slider__image" src="img/1.png" alt="">
-        <h2 class="pieces-slider__text">Angular 8</h2>
+        <h2 class="pieces-slider__text">Angular 11</h2>
     </div>
     <div class="pieces-slider__slide">
         <img class="pieces-slider__image" src="img/2.png" alt="">
-        <h2 class="pieces-slider__text">Magento 2</h2>
+        <h2 class="pieces-slider__text">C++ Firmware</h2>
     </div>
     <div class="pieces-slider__slide">
         <img class="pieces-slider__image" src="img/3.png" alt="">
-        <h2 class="pieces-slider__text">CRUD Application</h2>
+        <h2 class="pieces-slider__text">NodeJS v14 BackEnd</h2>
     </div>
     <div class="pieces-slider__slide">
         <img class="pieces-slider__image" src="img/4.png" alt="">
@@ -127,14 +132,21 @@ class ZT {
     </div>
     <div class="pieces-slider__slide">
         <img class="pieces-slider__image" src="img/7.png" alt="">
-        <h2 class="pieces-slider__text">Cloud Computing</h2>
+        <h2 class="pieces-slider__text">Cloud Computing Java Hibernate</h2>
     </div>
+    <div class="pieces-slider__slide">
+    <img class="pieces-slider__image" src="img/8.png" alt="">
+    <h2 class="pieces-slider__text">VueJS macOS Theme</h2>
+</div>
+<div class="pieces-slider__slide">
+<img class="pieces-slider__image" src="img/9.png" alt="">
+<h2 class="pieces-slider__text">RealKit Photographer</h2>
+</div>
         `;
-        return slides;
-        // $(slides).insertBefore($(".pieces-slider__canvas"));
-
-    }
+    return slides;
+    // $(slides).insertBefore($(".pieces-slider__canvas"));
+  }
 }
 $(document).ready(function () {
-    let zain = new ZT();
-})
+  let zain = new ZT();
+});
