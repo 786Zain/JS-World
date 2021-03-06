@@ -44,7 +44,7 @@ function incr() {
 function Git() {
   var links = [
     "https://github.com/786Zain/Angular11.git",
-    "https://github.com/786Zain/Firmware.git",
+    "#",
     "https://github.com/786Zain/NodeJS.git",
     "https://github.com/786Zain/macOS.git",
     "https://github.com/786Zain/FrontEnd-Test-Full-Throttle-Labs.git",
