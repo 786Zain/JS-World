@@ -42,17 +42,16 @@ function incr() {
   gitAlert();
 }
 function Git() {
-  var links = [
-    "https://github.com/786Zain/Angular11.git",
-    "#",
-    "https://github.com/786Zain/NodeJS.git",
-    "https://github.com/786Zain/macOS.git",
-    "https://github.com/786Zain/FrontEnd-Test-Full-Throttle-Labs.git",
-    "https://github.com/786Zain/WordPress.git",
-    "https://github.com/786Zain/VIDEO-RECOMMENDATION.git",
-    "https://github.com/786Zain/VueJS.git",
-    "https://github.com/786Zain/photographer.git",
-  ];
+  // "https://github.com/786Zain/Angular11.git",
+  //   "#",
+  //   "https://github.com/786Zain/NodeJS.git",
+  //   "https://github.com/786Zain/macOS.git",
+  //   "https://github.com/786Zain/FrontEnd-Test-Full-Throttle-Labs.git",
+  //   "https://github.com/786Zain/WordPress.git",
+  //   "https://github.com/786Zain/VIDEO-RECOMMENDATION.git",
+  //   "https://github.com/786Zain/VueJS.git",
+  //   "https://github.com/786Zain/photographer.git",
+  var links = ["#", "#", "#", "#", "#", "#", "#", "#", "#"];
   var emp = ["", "", "", "", "", "", ""];
   document.getElementById("GitLink").setAttribute("href", links[count]);
 }
