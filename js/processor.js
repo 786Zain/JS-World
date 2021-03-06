@@ -140,7 +140,7 @@ class ZT {
 </div>
 <div class="pieces-slider__slide">
 <img class="pieces-slider__image" src="img/9.png" alt="">
-<h2 class="pieces-slider__text">RealKit Photographer</h2>
+<h2 class="pieces-slider__text">Photographer Management</h2>
 </div>
         `;
     return slides;

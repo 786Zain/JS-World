@@ -29,7 +29,7 @@ function gitAlert() {
     "These theme written in WordPress Code Format and can be edited.",
     "These is cloud computing project it defines recommendation video list to member can also operate by android application.",
     "Chat Application in VueJS",
-    "RealKit is Photographer project mgnt Builded in ReactJS",
+    "Photographer project mgnt Builded in ReactJS",
   ];
   document.getElementById("alert").innerHTML = msgs[count];
 }
@@ -43,15 +43,15 @@ function incr() {
 }
 function Git() {
   var links = [
-    "https://github.com/786Zain/Tipster.git",
-    "https://github.com/786Zain/MillRight.git",
+    "https://github.com/786Zain/Angular11.git",
+    "https://github.com/786Zain/Firmware.git",
     "https://github.com/786Zain/NodeJS.git",
     "https://github.com/786Zain/macOS.git",
     "https://github.com/786Zain/FrontEnd-Test-Full-Throttle-Labs.git",
     "https://github.com/786Zain/WordPress.git",
     "https://github.com/786Zain/VIDEO-RECOMMENDATION.git",
     "https://github.com/786Zain/VueJS.git",
-    "https://github.com/786Zain/RealKit.git",
+    "https://github.com/786Zain/photographer.git",
   ];
   var emp = ["", "", "", "", "", "", ""];
   document.getElementById("GitLink").setAttribute("href", links[count]);
